@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>JS Calculator</title>
+    <script src="https://cdn.tailwindcss.com">
+        function solve(){
+        let y = eval(document.getElementById('screen').value)
+        document.getElementById('screen').value=y
+        }
+        function clear(){
+        document.getElementById('screen').value=""
+        }
+    </script>
+</head>
+<body>
+    <input class="grid grid-cols-4 gap-4" id="screen">
+        <button onclick="document.getElementById('screen').value=''">Clear</button>
+        <button onclick="document.getElementById('screen').value='1'">1</button>
+        <button onclick="document.getElementById('screen').value='2'">2</button>
+        <button onclick="document.getElementById('screen').value='3'">3</button>
+        <button onclick="document.getElementById('screen').value='/'">/</button>
+        <button onclick="document.getElementById('screen').value='4'">4</button>
+        <button onclick="document.getElementById('screen').value='5'">5</button>
+        <button onclick="document.getElementById('screen').value='6'">6</button>
+        <button onclick="document.getElementById('screen').value='7'">7</button>
+        <button onclick="document.getElementById('screen').value='8'">8</button>
+        <button onclick="document.getElementById('screen').value='9'">9</button>
+        <button onclick="document.getElementById('screen').value='-'">-</button>
+        <button onclick="document.getElementById('screen').value='0'">0</button>
+        <button onclick="solve()">=</button>
+        <button>+</button>
+</body>
+</html>
